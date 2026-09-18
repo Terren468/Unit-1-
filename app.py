@@ -33,22 +33,36 @@ def right():
     t.forward(142)
 right() """
 
-def rectangle(x,y) :
-    t.forward(x)
-    t.left (90)
-    t.forward(y)
-    t.left (90)
-    t.forward (x)
-    t.left (90)
-    t.forward (y)
-    t.left(90)
-rectangle(100,125)    
+# def rectangle(x,y) :
+#     t.forward(x)
+#     t.left (90)
+#     t.forward(y)
+#     t.left (90)
+#     t.forward (x)
+#     t.left (90)
+#     t.forward (y)
+#     t.left(90)
+# rectangle(100,125)    
 
-def equal (x) :
-    t.forward (x)
-    t.left(120)
-    t.forward(x)
-    t.left(120)
-    t.forward (x)
-    t.left (120)
-equal(90)    
+# def equal (x) :
+#     t.forward (x)
+#     t.left(120)
+#     t.forward(x)
+#     t.left(120)
+#     t.forward (x)
+#     t.left (120)
+# equal(90)    
+def add (x,y):
+     return x+y 
+def square(x,y):
+    for i in range(4):
+        t.forward(x)
+        t.left(y)
+def evil_square():
+   y = 90
+   c = 5
+   for i in range (60):
+        square(c,y) 
+        c += 5
+        t.right(5)
+evil_square() 
